@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reels - FishingHouse</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../ARCHIVOS/image/INICIO/logocolor.ico"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="../script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="barramenu">
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." />
+          <button class="Buscar">Buscar</button>
+          <button
+            class="cart-icon"
+            title="Ver carrito"
+            aria-label="Ver carrito"
+          >
+            <img src="../ARCHIVOS/image/INICIO/carrito.png" alt="Carrito" />
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+        <ul class="list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./cañas.html">Cañas</a></li>
+          <li><a href="./reels.html">Reels</a></li>
+          <li><a href="./señuelos.html">Señuelos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Reels de Pesca</h2>
+      <div class="catalog">
+        <article class="product">
+          <img
+            src="../image/PRODUCTOS/REELS/titan_x.jpg"
+            alt="Carrete de Pesca Titan X"
+          />
+          <h3>Carrete de Pesca Titan X</h3>
+          <p>Freno ajustable y capacidad de línea de 200 metros.</p>
+          <p class="price">$49.999</p>
+          <button class="btn buy-now">Comprar</button>
+          <button class="btn btn-primary add-to-cart">
+            Agregar al carrito
+          </button>
+        </article>
+
+        <article class="product">
+          <img
+            src="../image/PRODUCTOS/REELS/advance_pro.jpg"
+            alt="Carrete Advance Pro 5000"
+          />
+          <h3>Carrete Advance Pro 5000</h3>
+          <p>
+            Cuerpo metálico, freno magnético y rodamientos sellados para pesca
+            exigente.
+          </p>
+          <p class="price">$57.999</p>
+          <button class="btn buy-now">Comprar</button>
+          <button class="btn btn-primary add-to-cart">
+            Agregar al carrito
+          </button>
+        </article>
+
+        <article class="product">
+          <img
+            src="../image/PRODUCTOS/REELS/ocean_master.jpg"
+            alt="Carrete Ocean Master 3000"
+          />
+          <h3>Carrete Ocean Master 3500</h3>
+          <p>
+            Ideal para agua salada. Cuerpo de aluminio con recuperación rápida.
+          </p>
+          <p class="price">$62.500</p>
+          <button class="btn buy-now">Comprar</button>
+
+          <button class="btn btn-primary add-to-cart">
+            Agregar al carrito
+          </button>
+        </article>
+        <article class="product">
+          <img
+            src="../image/PRODUCTOS/REELS/ocean_master.jpg"
+            alt="Carrete Ocean Master 3000"
+          />
+          <h3>Carrete Ocean Master 3010</h3>
+          <p>
+            Ideal para agua salada. Cuerpo de aluminio con recuperación rápida.
+          </p>
+          <p class="price">$62.500</p>
+          <button class="btn buy-now">Comprar</button>
+          <button class="btn btn-primary add-to-cart">
+            Agregar al carrito
+          </button>
+        </article>
+        <article class="product">
+          <img
+            src="../image/PRODUCTOS/REELS/ocean_master.jpg"
+            alt="Carrete Ocean Master 3000"
+          />
+          <h3>Carrete Ocean Master 300</h3>
+          <p>
+            Ideal para agua salada. Cuerpo de aluminio con recuperación rápida.
+          </p>
+          <p class="price">$62.500</p>
+          <button class="btn buy-now">Comprar</button>
+          <button class="btn btn-primary add-to-cart">
+            Agregar al carrito
+          </button>
+        </article>
+        <article class="product">
+          <img
+            src="../image/PRODUCTOS/REELS/ocean_master.jpg"
+            alt="Carrete Ocean Master 3000"
+          />
+          <h3>Carrete Ocean Master 390</h3>
+          <p>
+            Ideal para agua salada. Cuerpo de aluminio con recuperación rápida.
+          </p>
+          <p class="price">$62.500</p>
+          <button class="btn buy-now">Comprar</button>
+          <button class="btn btn-primary add-to-cart">
+            Agregar al carrito
+          </button>
+        </article>
+        <article class="product">
+          <img
+            src="../image/PRODUCTOS/REELS/ocean_master.jpg"
+            alt="Carrete Ocean Master 3000"
+          />
+          <h3>Carrete Ocean Master 3120</h3>
+          <p>
+            Ideal para agua salada. Cuerpo de aluminio con recuperación rápida.
+          </p>
+          <p class="price">$62.500</p>
+          <button class="btn buy-now">Comprar</button>
+          <button class="btn btn-primary add-to-cart">
+            Agregar al carrito
+          </button>
+        </article>
+        <article class="product">
+          <img
+            src="../image/PRODUCTOS/REELS/ocean_master.jpg"
+            alt="Carrete Ocean Master 3000"
+          />
+          <h3>Carrete Ocean Master 3000</h3>
+          <p>
+            Ideal para agua salada. Cuerpo de aluminio con recuperación rápida.
+          </p>
+          <p class="price">$62.500</p>
+          <button class="btn buy-now">Comprar</button>
+          <button class="btn btn-primary add-to-cart">
+            Agregar al carrito
+          </button>
+        </article>
+      </div>
+    </main>
+
+    <div id="cart-modal" class="modal" aria-hidden="true">
+      <div class="modal-content cart-modal-content">
+        <button class="close-btn" id="cart-close" aria-label="Cerrar">×</button>
+        <h2>Tu carrito</h2>
+        <div id="cart-root"></div>
+        <div class="cart-actions">
+          <button id="btn-vaciar">Vaciar carrito</button>
+          <div class="total">Total: $<span id="cart-total">0</span></div>
+          <button id="btn-comprar">Finalizar compra</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Contacto:
+        <a href="mailto:FishingHouse@gmail.com">FishingHouse@gmail.com</a>
+      </p>
+      <p>&copy; 2024 FishingHouse</p>
+    </footer>
+  </body>
+</html>

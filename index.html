@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FishingHouse</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./ARCHIVOS/image/INICIO/logocolor.ico"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Título principal de la página -->
+    <header>
+      <h1 class="nombrepag">FishingHouse</h1>
+      <div id="cart-modal" class="modal" aria-hidden="true">
+        <div class="modal-content cart-modal-content">
+          <button class="close-btn" id="cart-close" aria-label="Cerrar">
+            ×
+          </button>
+          <h2>Tu carrito</h2>
+          <div id="cart-root"></div>
+          <div class="cart-actions">
+            <button id="btn-vaciar">Vaciar carrito</button>
+            <div class="total">Total: $<span id="cart-total">0</span></div>
+            <button id="btn-comprar">Finalizar compra</button>
+          </div>
+        </div>
+      </div>
+      <div class="img1">
+        <div id="carousel-container">
+          <img
+            src="../ARCHIVOS/image/INICIO/fondo.avif"
+            class="carousel-item active"
+            alt="Pesca 1"
+          />
+          <img
+            src="../ARCHIVOS/image/SEÑUELOS/Kit de Señuelos Multifuncionales.jpg"
+            class="carousel-item"
+            alt="Pesca 2"
+          />
+          <img
+            src="./archivos/imagenes/inicio/fondo.avif"
+            class="carousel-item"
+            alt="Pesca 3"
+          />
+        </div>
+        <button id="prevBtn" class="carousel-btn prev">◀</button>
+        <button id="nextBtn" class="carousel-btn next">▶</button>
+      </div>
+      <!-- Navegación principal -->
+      <nav class="barramenu">
+        <div class="search-bar">
+          <!-- Campo de búsqueda -->
+          <input type="text" placeholder="Buscar..." />
+          <button class="Buscar">Buscar</button>
+          <div class="cart-icon">
+            <img src="./ARCHIVOS/image/INICIO/carrito.png" alt="Carrito" />
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+
+        <ul class="list">
+          <!-- Enlaces de navegación -->
+          <li class="inicio"><a href="index.html">Inicio</a></li>
+          <li class="cañas"><a href="./Pages/cañas.html">Cañas</a></li>
+          <li class="reels"><a href="./Pages/reels.html">Reels</a></li>
+          <li class="señuelos"><a href="./Pages/señuelos.html">Señuelos</a></li>
+        </ul>
+      </nav>
+    </header>
+      <div class="prev"></div>
+      <div class="next"></div>
+    </section>
+
+    <!-- Título de la sección de productos -->
+    <section class="container my-5">
+      <h2 class="text-center">Productos de Pesca</h2>
+      <div class="catalog row gx-4 gy-5">
+        <!-- Productos individuales -->
+        <article class="product col-md-6 col-lg-4 col-xl-3 card">
+          <img
+            src="./image/PRODUCTOS/CAÑAS/spinning_pro.jpg"
+            alt="Caña de Pescar Spinning Pro"
+            class="card-img-top"
+          />
+          <div class="card-body d-flex flex-column align-items-center">
+            <h3 class="card-title">Caña de Pescar Spinning Pro</h3>
+            <p class="card-text">
+              Caña de pesca de carbono de alta resistencia, ligera y sensible.
+              Ideal para pesca en agua dulce y salada. Longitud de 2.40 metros,
+              con acción rápida.
+            </p>
+            <p class="price">$50.000</p>
+            <button class="btn buy-now">Comprar</button>
+            <button class="btn btn-primary add-to-cart">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
+
+        <article class="product col-md-6 col-lg-4 col-xl-3 card">
+          <img
+            src="./image/PRODUCTOS/CARRETES/titan_x.jpg"
+            alt="Carrete de Pesca Titan X"
+            class="card-img-top"
+          />
+          <div class="card-body d-flex flex-column align-items-center">
+            <h3 class="card-title">Carrete de Pesca Titan X</h3>
+            <p class="card-text">
+              Carrete de pesca con sistema de freno ajustable y capacidad de
+              línea de 200 metros. Ideal para pescadores de todos los niveles.
+              Incluye 5 rodamientos de acero inoxidable.
+            </p>
+            <p class="price">$50.000</p>
+            <button class="btn buy-now">Comprar</button>
+            <button class="btn btn-primary add-to-cart">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
+
+        <article class="product col-md-6 col-lg-4 col-xl-3 card">
+          <img
+            src="./ARCHIVOS/image/INICIO/Fondo2h2.jpg"
+            alt="Kit de Señuelos Multifuncionales"
+            class="card-img-top"
+          />
+          <div class="card-body d-flex flex-column align-items-center">
+            <h3 class="card-title">Kit de Señuelos Multifuncionales</h3>
+            <p class="card-text">
+              Conjunto de 10 señuelos de diferentes tipos y colores, ideales
+              para atraer diversas especies.
+            </p>
+            <p class="price">$50.000</p>
+            <button class="btn buy-now">Comprar</button>
+            <button class="btn btn-primary add-to-cart">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
+
+        <article class="product col-md-6 col-lg-4 col-xl-3 card">
+          <img
+            src="./image/PRODUCTOS/ACCESORIOS/chaleco_multifuncional.jpg"
+            alt="Chaleco de Pesca Multifuncional"
+            class="card-img-top"
+          />
+          <div class="card-body d-flex flex-column align-items-center">
+            <h3 class="card-title">Chaleco de Pesca Multifuncional</h3>
+            <p class="card-text">
+              Chaleco ligero y transpirable, diseñado con múltiples bolsillos
+              para almacenar accesorios. Ajustable y cómodo, ideal para largas
+              jornadas de pesca.
+            </p>
+            <p class="price">$50.000</p>
+            <button class="btn buy-now">Comprar</button>
+            <button class="btn btn-primary add-to-cart">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de métodos de envío y pago -->
+    <section class="mpenviopago">
+      <ul>
+        <li>
+          <div class="content">
+            <p>
+              <strong>3 cuotas sin interés</strong><br />con cualquier banco
+            </p>
+            <img
+              src="./ARCHIVOS/image/INICIO/tarjetadecredito.png"
+              alt="tarjeta de credito"
+              width="19"
+              height="19"
+            />
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <p>
+              <strong>Envío sin cargo a todo el país</strong><br />monto
+              superior a 100.000
+            </p>
+            <img
+              src="./ARCHIVOS/image/INICIO/envio-gratis.png"
+              alt="Envio-gratis"
+              width="19"
+              height="19"
+            />
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <p><strong>Pago seguro</strong><br />Tu dinero está a salvo</p>
+            <img
+              src="./ARCHIVOS/image/INICIO/escudo.png"
+              alt="escudo"
+              width="19"
+              height="19"
+            />
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>
+        Contacto:
+        <a href="mailto:FishingHouse@gmail.com" target="_blank"
+          >FishingHouse@gmail.com</a
+        >
+      </p>
+      <p>&copy; 2024 FishingHouse</p>
+    </footer>
+  </body>
+</html>
